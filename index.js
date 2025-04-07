@@ -62,7 +62,7 @@ app.post('/update-cobj', async (req, res) => {
     const createDog = `https://api.hubapi.com/crm/v3/objects/2-166947950/`;
     const headers = { 
         Authorization: `Bearer ${PRIVATE_APP_ACCESS}`,
-        'Content-Type': 'application/json' 
+        'Content-Type': 'application/json'
     };
     try { 
         await axios.post(createDog, create, { headers } );
